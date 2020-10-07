@@ -1,10 +1,10 @@
-package com.servico.demo;
+package org.generation.blogPessoal2;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ServicoApi1DiaApplicationTests {
+class Blogpessoal2ApplicationTests {
 
 	@Test
 	void contextLoads() {

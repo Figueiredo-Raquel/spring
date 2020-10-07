@@ -1,13 +1,13 @@
-package com.servico.demo;
+package org.generation.blogPessoal2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ServicoApi1DiaApplication {
+public class Blogpessoal2Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ServicoApi1DiaApplication.class, args);
+		SpringApplication.run(Blogpessoal2Application.class, args);
 	}
 
 }
