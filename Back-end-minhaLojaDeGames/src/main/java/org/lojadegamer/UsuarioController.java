@@ -15,68 +15,39 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-
 @RestController
-@RequestMapping("/categoria")
+@RequestMapping("/usuario")
 @CrossOrigin("*")
-public class CategoriaController {
-	
+public class UsuarioController {
+
 	@Autowired
-	private CategoriaRepository repository;
+	private UsuarioRepository repository;
 	
 	@GetMapping 
-	public ResponseEntity<List<CategoriaModel>> GetAll() {
+	public ResponseEntity<List<UsuarioModel>> GetAll() {
 		return ResponseEntity.ok(repository.findAll());
 	}
-
 	@GetMapping("/{id}") 
-	public ResponseEntity<CategoriaModel> GetById(@PathVariable long id) {
+	public ResponseEntity<UsuarioModel> GetById(@PathVariable long id) {
 																		
 		return repository.findById(id)
 				.map(resp -> ResponseEntity.ok(resp)) 
 				.orElse(ResponseEntity.notFound().build());
 	}
-	
-	@GetMapping("/genero")
-	public ResponseEntity<List<CategoriaModel>>GetByTitulo(@PathVariable String genero){
-		return ResponseEntity.ok(repository.findAllByGeneroContainingIgnoreCase(genero));
+	@GetMapping("/descricao")
+	public ResponseEntity<List<UsuarioModel>>GetByTitulo(@PathVariable String nome){
+		return ResponseEntity.ok(repository.findAllByNomeContainingIgnoreCase(nome));
 	}
-	 @PostMapping 
-	 public ResponseEntity<CategoriaModel> post(@RequestBody CategoriaModel categoria){
-		 return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(categoria));
+	@PostMapping 
+	 public ResponseEntity<UsuarioModel> post(@RequestBody UsuarioModel usuario){
+		 return ResponseEntity.status(HttpStatus.CREATED).body(repository.save(usuario));
 	 }
-	 
-	 @PutMapping 
-	 public ResponseEntity<CategoriaModel> put(@RequestBody CategoriaModel categoria){
-		 return ResponseEntity.status(HttpStatus.OK).body(repository.save(categoria));
+	@PutMapping 
+	 public ResponseEntity<UsuarioModel> put(@RequestBody UsuarioModel usuario){
+		 return ResponseEntity.status(HttpStatus.OK).body(repository.save(usuario));
 	 }
 	 @DeleteMapping("/{id}") 
 	 public void delete(@PathVariable long id) {
 		 repository.deleteById(id);
 	 }
-
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
