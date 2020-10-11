@@ -1,0 +1,266 @@
+{
+	"id": "8a57d3d4-f23e-4ff4-920a-e0aba109fcbf",
+	"name": "Loja_De_Gamer",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"0fc98451-28e6-4d8a-8c59-2fd014b66713",
+		"0218b403-9141-4347-b78e-63693a176017",
+		"bd7f2e5e-b206-47ad-bd2d-be0076814085",
+		"cfa3f3f1-446f-4698-8a17-111698d99852",
+		"5333732d-aa28-4381-a22c-11799c64a125",
+		"a865f18f-9e0a-4ec0-bebd-b6d1eae11517",
+		"69c39566-1ba0-41af-9bad-6c57897c6270",
+		"376fafe8-89d3-4e7c-8687-114c27b1e133",
+		"499ca986-3269-43ad-8840-1e489edd19c4",
+		"026acf5d-bb24-48f7-99cd-377fbb2e04ca",
+		"de0e2615-ae4a-4e33-813e-d4901867a61d",
+		"9909c5b4-95af-44e6-81c6-7066571e7073"
+	],
+	"folders_order": [],
+	"protocolProfileBehavior": {},
+	"folders": [],
+	"requests": [
+		{
+			"id": "0218b403-9141-4347-b78e-63693a176017",
+			"name": "http://localhost:8080/usuario/5",
+			"url": "http://localhost:8080/usuario/5",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "026acf5d-bb24-48f7-99cd-377fbb2e04ca",
+			"name": "http://localhost:8080/categoria/4",
+			"url": "http://localhost:8080/categoria/4",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "0fc98451-28e6-4d8a-8c59-2fd014b66713",
+			"name": "http://localhost:8080/usuario",
+			"url": "http://localhost:8080/usuario",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n    \"id\": 5,\r\n    \"nome\": \"Mario Medeiros Ferreira\",\r\n    \"email\": \"marioM@gamil.com\",\r\n    \"senha\": \"703027\"\r\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "376fafe8-89d3-4e7c-8687-114c27b1e133",
+			"name": "http://localhost:8080/categoria",
+			"url": "http://localhost:8080/categoria",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n        \"id\":4 ,\r\n        \"genero\": \"Jogos de luta\",\r\n        \"franquia\": \"X BOX\",\r\n        \"tipo\": \"Dublado\"\r\n}    \r\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "499ca986-3269-43ad-8840-1e489edd19c4",
+			"name": "http://localhost:8080/categoria",
+			"url": "http://localhost:8080/categoria",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n        \"id\": 4,\r\n        \"genero\": \"Jogos de luta\",\r\n        \"franquia\": \"PS4\",\r\n        \"tipo\": \"Dublado\"\r\n        \r\n    }\r\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "5333732d-aa28-4381-a22c-11799c64a125",
+			"name": "http://localhost:8080/produto",
+			"url": "http://localhost:8080/produto",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "PUT",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n    \"id\": 4,\r\n    \"nome\": \"Super Mario\",\r\n    \"descricao\": \"Edição Especial\",\r\n    \"preco\": 2000\r\n  \r\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "69c39566-1ba0-41af-9bad-6c57897c6270",
+			"name": "http://localhost:8080/categoria",
+			"url": "http://localhost:8080/categoria",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "9909c5b4-95af-44e6-81c6-7066571e7073",
+			"name": "http://localhost:8080/usuario",
+			"url": "http://localhost:8080/usuario",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": " {\r\n       \r\n        \"nome\": \"Marilia Mendonça\",\r\n        \"email\": \"MariliaC@gmail.com\",\r\n        \"senha\": \"1094875\"\r\n    }",
+			"pathVariables": {}
+		},
+		{
+			"id": "a865f18f-9e0a-4ec0-bebd-b6d1eae11517",
+			"name": "http://localhost:8080/produto/4",
+			"url": "http://localhost:8080/produto/4",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "DELETE",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "bd7f2e5e-b206-47ad-bd2d-be0076814085",
+			"name": "http://localhost:8080/produto",
+			"url": "http://localhost:8080/produto",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		},
+		{
+			"id": "cfa3f3f1-446f-4698-8a17-111698d99852",
+			"name": "http://localhost:8080/produto",
+			"url": "http://localhost:8080/categoria",
+			"description": "",
+			"data": [],
+			"dataOptions": {
+				"raw": {
+					"language": "json"
+				}
+			},
+			"dataMode": "raw",
+			"headerData": null,
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"rawModeData": "{\r\n   \"id\":5,\r\n   \"genero\":\"Jogos de luta\",\r\n    \"franquia\":\"X BOX\",\r\n    \"tipo\":\"Dublado\"\r\n}",
+			"pathVariables": {}
+		},
+		{
+			"id": "de0e2615-ae4a-4e33-813e-d4901867a61d",
+			"name": "http://localhost:8080/usuario",
+			"url": "http://localhost:8080/usuario",
+			"description": "",
+			"data": null,
+			"dataOptions": null,
+			"dataMode": null,
+			"headerData": null,
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"pathVariables": {}
+		}
+	]
+}
